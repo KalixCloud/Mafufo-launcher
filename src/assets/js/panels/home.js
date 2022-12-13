@@ -35,12 +35,12 @@ class Home {
                 blockNews.innerHTML = `
                     <div class="news-header">
                         <div class="header-text">
-                            <div class="title">Aucun news n'ai actuellement disponible.</div>
+                            <div class="title">Actualmente no hay noticias disponibles.</div>
                         </div>
                     </div>
                     <div class="news-content">
                         <div class="bbWrapper">
-                            <p>Vous pourrez suivre ici toutes les news relative au serveur.</p>
+                            <p>Puede seguir todas las noticias sobre el servidor aquí.</p>
                         </div>
                     </div>`
                 news.appendChild(blockNews);
@@ -79,7 +79,7 @@ class Home {
                 </div>
                 <div class="news-content">
                     <div class="bbWrapper">
-                        <p>Impossible de contacter le serveur des news.</br>Merci de vérifier votre configuration.</p>
+                        <p>No se ha podido contactar con el servidor de noticias.</br>Compruebe su configuración.</p>
                     </div>
                 </div>`
             // news.appendChild(blockNews);
@@ -188,8 +188,8 @@ class Home {
             online.classList.toggle("off");
             playersConnected.textContent = serverPing.playersConnect;
         } else if (serverPing.error) {
-            nameServer.textContent = 'Serveur indisponible';
-            serverMs.innerHTML = `<span class="red">Hors ligne</span>`;
+            nameServer.textContent = 'Servidor no disponible';
+            serverMs.innerHTML = `<span class="red">Fuera de línea</span>`;
         }
     }
 
